@@ -188,9 +188,10 @@ int main() {
     }                  
                         
 
-            case 4: {
-                cout << "Common types of supplements:\n1. Vitamins\n2. Minerals\n3. Botanicals or herbs\n"
-                     << "4. Botanical compounds\n5. Amino acids\n6. Live microbials (probiotics)\n7. Exit" << endl;
+          
+              case 4: {
+                cout << "Common types of supplements:\n1. Multivitamins\n2. Minerals\n3. Biotin \n"
+                     << "4. Omega\n5. Collagen\n6. Vitamin D3\n7. Exit" << endl;
 
                 int supplementType;
                 cout << "Enter your choice (1-7): ";
@@ -201,28 +202,28 @@ int main() {
 
                 switch (supplementType) {
                     case 1:
-                        supplement = "Multivitamins";
-                        price = 9.99;
+                        supplement = "Abott surbex X, 30 Ct";
+                        price = 294;
                         break;
                     case 2:
-                        supplement = "Minerals";
-                        price = 7.99;
+                        supplement = "CaC- 1000 Plus (orange)";
+                        price = 234;
                         break;
                     case 3:
-                        supplement = "Botanicals or herbs";
-                        price = 12.99;
+                        supplement = "Natural Factors Biotin";
+                        price = 2590;
                         break;
                     case 4:
-                        supplement = "Botanical compounds";
-                        price = 14.99;
+                        supplement = "Blackmores Omega Daily";
+                        price = 4550;
                         break;
                     case 5:
-                        supplement = "Amino acids";
-                        price = 10.99;
+                        supplement = "Webbers Natural Collagen30";
+                        price = 9500;
                         break;
                     case 6:
-                        supplement = "Live microbials (probiotics)";
-                        price = 18.99;
+                        supplement = "Dan-D 50000 IU";
+                        price = 340;
                         break;
                     case 7:
                         break; // Exit the supplements section
@@ -235,6 +236,7 @@ int main() {
                 totalAmount += price;
                 break;
             }
+
             case 5: {
                 cout << "Available medical equipment:\n1. Syringes\n2. Crutches\n3. Thermometer\n"
                      << "4. Blood Glucose Monitor\n5. Saniplast \n6. Heating Pad\n7. Knee Cap\n8. Blood Pressure Monitor\n"

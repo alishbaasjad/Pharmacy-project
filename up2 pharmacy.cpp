@@ -30,21 +30,8 @@ int main() {
         switch (category) {
                 case 1: {
                 int symptom;
-                cout<<"\t\t--------------------------------------------------\n";
-                 cout<<"\t\t--------------------------------------------------\n";
-                cout << "Select the symptoms:\n\n3. Flu\n4. Upset stomach\n5. Vomiting\n6. Pain\n7. Exit" << endl;
+                cout << "Select the symptoms:\n1. Fever\n2. Cough\n3. Flu\n4. Upset Stomach\n5. Vomitting\n6. Pain\n7. Eye Infection\n8. Exit" << endl;
                 cout << "Enter your choice (1-7): ";
-                cout <<" 1. Fever  ";
-                cout <<" 2. Cough  ";
-                cout <<" 3. Flu   ";
-                cout <<" 4. Upset stomach  ";
-                cout <<" 5. Vomiting  ";
-                cout <<" 6. Pain   ";
-                cout <<" 7. Eye Infection   ";
-                cout <<" 8. Exit  ";
-                
-                cout<<"\t\t--------------------------------------------------\n";
-                cout<<"\t\t--------------------------------------------------\n";
                 cin >> symptom;
 
                 string medicine;

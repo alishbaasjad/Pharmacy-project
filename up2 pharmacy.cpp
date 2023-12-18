@@ -28,7 +28,7 @@ int main() {
         cin >> category;
 
         switch (category) {
-            case 1: {
+                case 1: {
                 int symptom;
                 cout<<"\t\t--------------------------------------------------\n";
                  cout<<"\t\t--------------------------------------------------\n";
@@ -36,11 +36,12 @@ int main() {
                 cout << "Enter your choice (1-7): ";
                 cout <<" 1. Fever  ";
                 cout <<" 2. Cough  ";
-                cout <<" n3. Flu   ";
+                cout <<" 3. Flu   ";
                 cout <<" 4. Upset stomach  ";
                 cout <<" 5. Vomiting  ";
                 cout <<" 6. Pain   ";
-                cout <<" 7. Exit  ";
+                cout <<" 7. Eye Infection   ";
+                cout <<" 8. Exit  ";
                 
                 cout<<"\t\t--------------------------------------------------\n";
                 cout<<"\t\t--------------------------------------------------\n";
@@ -52,29 +53,33 @@ int main() {
                 switch (symptom) {
                     case 1:
                         medicine = "Paracetamol";
-                        price = 5.99;
+                        price = 450;
                         break;
                     case 2:
-                        medicine = "HIMALAYA KOFLET SYRUP";
-                        price = 8.99;
+                        medicine = "Acefyl";
+                        price = 80;
                         break;
                     case 3:
-                        medicine = "Paracetamol";
-                        price = 5.99;
+                        medicine = "Arinac";
+                        price = 110;
                         break;
                     case 4:
-                        medicine = "Panadol 500 mg";
-                        price = 6.99;
+                        medicine = "Flagyl";
+                        price = 550;
                         break;
                     case 5:
-                        medicine = "Paracetamol";
-                        price = 5.99;
+                        medicine = "Gravinate";
+                        price = 200;
                         break;
                     case 6:
-                        medicine = "Paracetamol";
-                        price = 5.99;
+                        medicine = "Panadol";
+                        price = 130;
                         break;
                     case 7:
+                        medicine = "Eye drops";
+                        price = 350;
+                        break;
+                    case 8:
                         break; // Exit the medicine section
                     default:
                         cout << "Invalid choice!" << endl;
@@ -86,7 +91,6 @@ int main() {
                 break;
             }
         
-
             case 2: {
                 int skinType;
                 cout << "Select your skin type:\n1. Oily skin\n2. Normal skin\n3. Combination skin\n4. Dry-dehydrated skin\n"
@@ -231,11 +235,10 @@ int main() {
                 totalAmount += price;
                 break;
             }
-
             case 5: {
-                cout << "Available medical equipment:\n1. Hospital Stretchers\n2. Defibrillators\n3. Anesthesia Machines\n"
-                     << "4. Patient Monitors\n5. Sterilizers\n6. EKG/ECG Machines\n7. Surgical Tables\n8. Blanket and Fluid Warmers\n"
-                     << "9. Electrosurgical Units\n10. Surgical Lights\n11. Exit" << endl;
+                cout << "Available medical equipment:\n1. Syringes\n2. Crutches\n3. Thermometer\n"
+                     << "4. Blood Glucose Monitor\n5. Saniplast \n6. Heating Pad\n7. Knee Cap\n8. Blood Pressure Monitor\n"
+                     << "9. Wheelchair\n10. Exit" << endl;
 
                 int equipmentType;
                 cout << "Enter your choice (1-11): ";
@@ -246,46 +249,42 @@ int main() {
 
                 switch (equipmentType) {
                     case 1:
-                        equipment = "Hospital Stretchers";
-                        price = 499.99;
+                        equipment = "Syringes";
+                        price = 550;
                         break;
                     case 2:
-                        equipment = "Defibrillators";
+                        equipment = "Crutches";
                         price = 1999.99;
                         break;
                     case 3:
-                        equipment = "Anesthesia Machines";
-                        price = 2999.99;
+                        equipment = "Thermometer";
+                        price = 600;
                         break;
                     case 4:
-                        equipment = "Patient Monitors";
-                        price = 1499.99;
+                        equipment = "Blood Glucose Monitors";
+                        price = 2370;
                         break;
                     case 5:
-                        equipment = "Sterilizers";
-                        price = 2499.99;
+                        equipment = "Saniplast";
+                        price = 20;
                         break;
                     case 6:
-                        equipment = "EKG/ECG Machines";
-                        price = 1999.99;
+                        equipment = "Heating Pad";
+                        price = 7000;
                         break;
                     case 7:
-                        equipment = "Surgical Tables";
-                        price = 3499.99;
+                        equipment = "Knee Cap";
+                        price = 570;
                         break;
                     case 8:
-                        equipment = "Blanket and Fluid Warmers";
-                        price = 799.99;
+                        equipment = "Blood Pressure Monitor";
+                        price = 3200;
                         break;
                     case 9:
-                        equipment = "Electrosurgical Units";
-                        price = 2999.99;
+                        equipment = "Wheelchair";
+                        price = 10000;
                         break;
                     case 10:
-                        equipment = "Surgical Lights";
-                        price = 1599.99;
-                        break;
-                    case 11:
                         break; // Exit the medical equipment section
                     default:
                         cout << "Invalid choice!" << endl;
@@ -296,6 +295,7 @@ int main() {
                 totalAmount += price;
                 break;
             }
+
 
 case 7: {
                 cout << "Common types of baby care items:\n1. Pampers\n2. Cerelac\n3. BF1\n"
